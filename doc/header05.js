@@ -24,7 +24,7 @@ $('.main_slider').slick({
     autoplay:true,
     pauseOnHover:false,
 
-});
+}); 
 
 //제품슬라이드
 $('.pr_slider').slick({

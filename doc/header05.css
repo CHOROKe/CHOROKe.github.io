@@ -31,7 +31,7 @@ transition: 1s; z-index:999;}
 background:#fff; position:absolute; top: 50%; left:0; transform: translateY(-50%);}
 #header .right {font-size:20px; margin-left:40px;}
 
-#header.on nav>ul>li~li>a:after {background: #333;}
+#header.on nav>ul>li~li>a:after {background: #333;} 
 #header:hover nav>ul>li~li>a:after {background: #333;}
 
 #main_visual {position: relative;}
@@ -41,7 +41,7 @@ background:#fff; position:absolute; top: 50%; left:0; transform: translateY(-50%
 #main_visual .item02 {background: url(../lib/base/main_visual02.jpg) 
     no-repeat center center/cover;}
 #main_visual .item03 {background: url(../lib/base/main_visual03.jpg) 
-    no-repeat center center/cover;}
+    no-repeat center center/cover;} 
 
 /*밑에 수치는 공식처럼 외우기(.container / translate까지), position absolute의 기준은 container의 부모인
 #main_visua에 position relative시킨다. */
@@ -78,8 +78,6 @@ text-align:center;}
 font-size: 20px; padding:10px; background: #ddd; border-radius: 50%; }
 #content01 .btn i.xi-arrow-left {margin-left: -585px;}
 #content01 .btn i.xi-arrow-right {margin-left: 585px;}
-
-
 
 
 

@@ -7,7 +7,7 @@ $("#m01").YTPlayer({
     startAt:0, 
     opacity:1,
     showControls:false,
-});
+}); 
 
 
 $('#visual i.xi-pause').on('click', function(){

@@ -14,7 +14,7 @@ background:#333; position:absolute; top: 50%; left:0; transform: translateY(-50%
 #header .right {font-size:20px; margin-left:40px;}
 
 
-#main_visual {position: relative;}
+#main_visual {position: relative;} 
 #main_visual figure {height: 600px;}
 #main_visual .item01 {background: url(../lib/base/main_visual01.jpg) 
     no-repeat center center/cover;}

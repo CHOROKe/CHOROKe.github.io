@@ -1,7 +1,7 @@
 #header {line-height:100px;}
 #header h1 {padding: 0 15px}
 #header h1 img {width:200px;}
-#header .container {display:flex; width:1200px; margin:0 auto;} 
+#header .container {display:flex; width:1200px; margin:0 auto;}  
 #header .container nav {margin-left:auto; }
 #header .container nav>ul {display:flex; font-size:20px;}
 #header .container nav>ul>li {position:relative;}

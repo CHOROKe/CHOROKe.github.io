@@ -57,5 +57,5 @@ $('#content01 .btn i.xi-arrow-right').on('click', function(){
     $('.pr_slider').slick('slickNext');
 });
 
-//-------------------------------------
+//------------------------------------- 
 })
