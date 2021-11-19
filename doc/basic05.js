@@ -12,7 +12,7 @@ $('#top_banner i').on('click', function(){
 //----------------------------------------------------------------
 
 $('.main_slider').slick({
-    arrows:false,
+    arrows:false, 
     autoplay:true,
     autoplaySpeed:3000,
     pauseOnHover:false,
