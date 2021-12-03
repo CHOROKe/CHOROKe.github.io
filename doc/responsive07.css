@@ -14,7 +14,7 @@ body {font-size:1.6rem;}
 
 .wrap {min-width:120rem;}
 .header {line-height:10rem;position:relative;}
-.header h1 img {width:20rem;}
+.header h1 img {width:20rem;} 
 .header .container {display:flex;justify-content:space-between;}
 
 .gnb {}

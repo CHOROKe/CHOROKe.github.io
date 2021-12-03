@@ -13,9 +13,11 @@ body {font-size: 1.6rem;}
 
 .wrap {min-width:120rem}
 
-.header {line-height: 10rem;position: relative;}
+.header {line-height: 10rem;position: relative;} 
 .header h1 img {width:20rem}
 .header .container {display:flex; justify-content:space-between;}
+
+
 
 
 
@@ -30,6 +32,26 @@ transition:0.5s;z-index:999;}
 transition:0.5s;z-index:999;}
 .gnb:hover:before {height:19rem;}
 .gnb .depth02 li>a {display:block; line-height:3rem; text-align:center;}
+@media (max-width:768px) {
+        
+    .gnb {position:fixed; top:0; left:-100%;width:calc(100% - 90px); height:100vh; background:#fff;padding:13rem 0 0 0; 
+        border-right: 1px solid#333;transition:0.5s; z-index:999; }
+    .gnb.on {left:0} 
+    .gnb .depth01 {display:flex; flex-direction: column;}
+    .gnb .depth01>li>a {display:block; padding:0 3rem; line-height:4rem; border-bottom:1px solid#ddd;}
+
+    .gnb .depth01>li {position: relative;}
+
+    .gnb .depth02 {display:none; height:auto; overflow:hidden; position:static; top:10rem; left:0; width:100%;
+     transition:none; background:#f7f7f7; z-index:999;}
+     
+    .gnb:before {content:""; display:none; width:100%; height:19rem; background:#fff; position:absolute; top:10rem; left:0;
+    transition:0.5s;z-index:999;}
+
+    .gnb:hover:before {height:19rem;}
+    .gnb:hover .depth02 {display:none; height:auto;}
+    .gnb .depth02 li>a {display:block; line-height:3rem; text-align:left ; padding:0 3rem;}
+}
 
 .mopen {display:none;}
 
