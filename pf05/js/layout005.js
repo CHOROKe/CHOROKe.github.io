@@ -92,9 +92,9 @@ $(function(){
         mute:true, 
         startAt:0, 
         opacity:1,
-        // showControls:false,
-        // playOnlyIfVisible:true,
-        // useOnMobile:true,
+        showControls:false,
+        playOnlyIfVisible:true,
+        useOnMobile:true,
 
         // optimizeDisplay:false,
 
