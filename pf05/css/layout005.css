@@ -96,7 +96,8 @@ font-style:italic; color: #bebebe; letter-spacing:0.05em;}
 #section03 .container { display:flex; width:1200px; margin:0 auto; padding:0 15px;}
 #section03 .container .con { position: relative; margin-left:30px; margin-top:-130px; z-index:999; }
 #section03 .container .con:nth-child(1) {margin-left:0;}
-#section03 .container .con img {width:100%; }
+#section03 .container .con img {width:100%; transition:0.3s; cursor: pointer;}
+#section03 .container .con img:hover {filter: brightness(0.50);}
 #section03 .container .con .step {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80%; text-align:center; }
 #section03 .container .con .step h3 {font-family:'Playfair Display', serif; font-size:25px; font-weight:700; 
 letter-spacing:0.2em; margin-bottom:30px;}
