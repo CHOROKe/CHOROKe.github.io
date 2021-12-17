@@ -93,7 +93,7 @@ $(function(){
         opacity:1,
         showControls:false,
         playOnlyIfVisible:true,
-        useOnMobile:true,
+        // useOnMobile:true,
 
         // optimizeDisplay:false,
 
