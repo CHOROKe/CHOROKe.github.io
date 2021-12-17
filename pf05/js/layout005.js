@@ -82,6 +82,7 @@ $(function(){
          ]    
         
 
+
     });
     //-------------섹션04--------
     $('#mv02').YTPlayer({
@@ -91,8 +92,8 @@ $(function(){
         mute:true, 
         startAt:0, 
         opacity:1,
-        showControls:false,
-        playOnlyIfVisible:true,
+        // showControls:false,
+        // playOnlyIfVisible:true,
         // useOnMobile:true,
 
         // optimizeDisplay:false,
