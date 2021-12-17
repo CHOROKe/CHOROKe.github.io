@@ -19,7 +19,7 @@ $(function(){
     //------------반응형 내비-------
     $('#m_menu').on('click', function(){
         $(this).toggleClass('on');
-        $('.container').toggleClass('on');
+        $('.container').toggleClass('on'); 
     });
 
     // $('nav>ul>li>a').on('click',function(){
@@ -93,7 +93,7 @@ $(function(){
         opacity:1,
         showControls:false,
         playOnlyIfVisible:true,
-        useOnMobile:true,
+        // useOnMobile:true,
 
         // optimizeDisplay:false,
 
