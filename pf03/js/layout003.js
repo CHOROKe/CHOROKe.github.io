@@ -32,25 +32,25 @@ $(function(){
     });
 
 //------------반응형에서만 슬릭 돌리는거
-	var Rsd = $('.stip');
+   var Rsd = $('.stip');
 
-	var slickOptions = {
-		infinite: true,
-		slidesToShow: 1,
-		autoplay:true,
-		autoplaySpeed:3000,
-		centerMode:false,
-		dots:true,
-		arrows:false
-	};
+   var slickOptions = {
+      infinite: true,
+      slidesToShow: 1,
+      autoplay:true,
+      autoplaySpeed:3000,
+      centerMode:false,
+      dots:true,
+      arrows:false
+   };
 
-	$(window).on('load resize', function() {
-		if($(window).width() > 768) {
-			Rsd.slick('unslick');
-		}else{
-			Rsd.not('.slick-initialized').slick(slickOptions);
-		}
-	});
+   $(window).on('load resize', function() {
+      if($(window).width() > 768) {
+         Rsd.slick('unslick');
+      }else{
+         Rsd.not('.slick-initialized').slick(slickOptions);
+      }
+   });
 
 
 
