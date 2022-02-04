@@ -9,7 +9,7 @@ $(function(){
         if($(window).width()>768){
             if(sct>300) {
                 $('#header').fadeIn()
-            }else{
+            }else{ 
                 $('#header').fadeOut()
             }  
         }
@@ -41,7 +41,7 @@ $(function(){
 
     //-------------메인 비쥬얼 동영상--------
     $("#m01").YTPlayer({
-        videoURL:'https://youtu.be/tjZODH4YutM', 
+        videoURL:'tjZODH4YutM', 
         containment:'#main_visual', 
         autoPlay:true, 
         mute:true, 
