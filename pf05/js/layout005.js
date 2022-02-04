@@ -86,8 +86,8 @@ $(function(){
     });
     //-------------섹션04--------
     $('#mv02').YTPlayer({
-        videoURL:'https://youtu.be/WaCZO_ZbOzc',
-        containment:'self',
+        videoURL:'WaCZO_ZbOzc',
+        containment:'#section04 .case',
         autoPlay:true, 
         mute:true, 
         startAt:0, 
