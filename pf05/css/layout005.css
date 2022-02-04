@@ -341,7 +341,7 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     #section04 .persona .right {margin-top:23px;}
     #section04 .persona .left {margin-top:50px}
     
-    #section04 .case {width:auto; margin:0 auto;}
+    #section04 .case {width:auto; height:200px;  margin:0 auto;}
     #section04 .case #mv02 {}   
 
 
