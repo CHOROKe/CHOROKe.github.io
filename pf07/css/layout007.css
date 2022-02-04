@@ -252,7 +252,7 @@ transform:translate(-50%, -50%);}
     #header h1 {margin:auto 0; position:absolute;top:20px; left:25px;}
     #header h1 a {display:block; background:url(../img/logo03.png)no-repeat left center/100px; width:200px; height:55px;}
     
-    #header nav {position:fixed; top:0; right:-100%; height:100vh; width:calc(100% - 90px); background:#fff; transition:0.6s; z-index:4; }
+    #header nav {position:fixed; top:0; right:-100%; height:100vh; width:calc(100% - 90px); background:#fff; transition:0.6s; z-index:10; }
     #header nav.on {right:0;}
 
     #header nav>ul {display:none; }
@@ -271,12 +271,12 @@ transform:translate(-50%, -50%);}
     
    
     
-
+    *{outline: 1px sol id #f00} 
     
+    #m_menu::before {content:""; display:block; padding:22px; border-radius:50%; background:#ffffff; position:absolute; top:-11px; right:-12px}
 
-
-    #m_menu {display:block;width:20px;height:20px;position:fixed;top:30px;right:30px; cursor: pointer; z-index:9999999;}
-    #m_menu>div {height:1px;width:20px;background:#0075BC;position:absolute;left:0;}
+    #m_menu {display:block; position: relative; width:20px;height:20px;position:fixed;top:30px;right:30px; cursor: pointer; z-index:99;}
+    #m_menu>div {height:2px;width:20px;background:#979797;position:absolute;left:0; }
     #m_menu>div:nth-child(1) {top:0; transition:0.5s;}
     #m_menu>div:nth-child(2) {top:10px; transition:0.5s;} 
     #m_menu>div:nth-child(3) {top:10px; transition:0.5s;}
@@ -467,7 +467,7 @@ transform:translate(-50%, -50%);}
 }
 
 
-*{outline: 1px sol id #f00} 
+
 
 
 
