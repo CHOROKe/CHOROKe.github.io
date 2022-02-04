@@ -3,7 +3,7 @@
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
 }
 @font-face {
     font-family: 'Pretendard-Thin';
@@ -84,8 +84,8 @@ transition:0.4s; z-index:999;}
 
 
 
-
-
+.description {position:relative;}
+.description::after {content:""; display:block; width:1px; height:100vh; background:#000; position:absolute; top:0; left:5%; z-index:99999;}
 
 
 
@@ -110,7 +110,7 @@ transition:0.4s; z-index:999;}
 
 
 
-
+ 
 
 
 #section02 {}
@@ -194,15 +194,17 @@ line-height:25px; color:#ffffff;}
 #section04 .container .sm p {color:#e4ebe2; font-size:14px; font-weight:300; line-height:20px;}
 
 
-
-
-
-
-
-
-
-
-
+*{outline: 1px sol id #f00}  
+#footer {background:#ffffff; padding:70px 0}
+#footer .container {display:flex; width:1200px; padding:0 15px; margin:0 auto; }
+#footer .container>dl {width:65%; display:flex; text-align:left; }
+#footer .container>dl>dd {flex:1; font-size:15px; font-weight:400; letter-spacing:-0.025em; }
+#footer .container dl dl {margin-top:20px; line-height:20px; font-size:13px; font-weight:300; color:#a8a8a8;}
+#footer .container dl dl dt {color: #4a6a53;} 
+#footer .container .right {width:35%;text-align:right; margin-left:auto; line-height:19px;}
+#footer .container .right figure {margin-bottom:20px; }
+#footer .container .right figure img {width:100px}
+#footer .container .right span {display:block; font-size:13px; font-weight:300; color:#a8a8a8; letter-spacing:-0.03em;}
 
 
 
@@ -408,4 +410,3 @@ line-height:25px; color:#ffffff;}
 
 
  
-*{outline: 1px sol id #f00}  

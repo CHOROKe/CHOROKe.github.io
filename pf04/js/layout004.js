@@ -55,7 +55,7 @@ $(function(){
     $(window).on('resize', function(){
         if($(window).width() > 768) {
             $('nav').removeClass('on');
-            $('nav>ul>li>ul').removeAttr('style');
+            $('nav>ul>li>ul').removeAttr('style'); 
         } 
     });
 
