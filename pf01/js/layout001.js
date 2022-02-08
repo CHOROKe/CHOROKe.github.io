@@ -15,7 +15,7 @@ $(function(){
 
 //-----메인비주얼 동영상----------- 
 $("#m01").YTPlayer({
-    videoURL:'https://www.youtube.com/watch?v=RXDExEpil50',
+    videoURL:'RXDExEpil50',
     containment:'self',
     autoPlay:true, 
     mute:true, 
@@ -27,13 +27,13 @@ $("#m01").YTPlayer({
 
 
 //--------메인슬라이더----------
-    $('.main_slider').slick({
-       arrows:false,
-       autoplay:false,
-       pauseOnHover:false,
+    // $('.main_slider').slick({
+    //    arrows:false,
+    //    autoplay:false,
+    //    pauseOnHover:false,
        
     
-    }); 
+    // }); 
 
 //----------제품슬라이드----------
     $('.slider01').slick({
@@ -63,10 +63,6 @@ $("#m01").YTPlayer({
     });
 
 
-
-
-
-
 //---------빨리 움직이는 브랜드 슬라이드-----------
 
     $('.slider02').slick({
@@ -79,17 +75,6 @@ $("#m01").YTPlayer({
     });
     
 
-
-
-
-
-
-
-
-
-
-
-
     $('.slider03').slick({
         arrows:false,
         centerMode: true,
@@ -100,18 +85,12 @@ $("#m01").YTPlayer({
     });
 
 
-
-
     $('#content04 .xi-angle-left-thin').on('click', function(){
         $('.slider03').slick('slickPrev');
     });
     $('#content04 .xi-angle-right-thin').on('click', function(){
         $('.slider03').slick('slickNext'); 
     });
-
-
-
-
 
 
 });
