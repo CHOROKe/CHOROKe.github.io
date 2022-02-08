@@ -3,7 +3,7 @@ $(function(){
     //-----팝업창 슬라이드-----
     $('.pop ul').slick({
         autoplay:true,
-        autoplaySpeed:3000,
+        autoplaySpeed:3000, 
         dots:false,
         fade: true,
         arrows:false,
@@ -22,9 +22,7 @@ $(function(){
     $(".pop .xi-angle-down-min").on("click",function(){
         $(".pop ul").slick("slickNext")
     });  
-    // $(".close").on("click",function(){
-    //     $(".pop").addClass("on");
-    // });  
+  
     $('.close').on('click', function(){
         $(this).parent().parent().slideUp();
     });
@@ -73,18 +71,22 @@ $(function(){
             delay:50,
             time:800,
         });                  
-}
+    }
     var cu0=0;
     $(window).on("scroll", function(){
-       
-        if($(window).scrollTop() > 1000){
-            if(cu0!=1){
-                cU();
-                cu0=1;
-            }                        
-        }else{
-            cu0=0;
+        if($(window).width() > 768){
+            if($(window).scrollTop() > 1000){
+                if(cu0!=1){
+                    cU();
+                    cu0=1;
+                }                        
+            }else{
+                cu0=0;
+            }
+
         }
+       
+
     })
     //--------섹션03 화살표------------
     $('.xi-angle-left-thin').on('click', function(){
