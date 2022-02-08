@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Luckiest+Guy&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+#header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
+
+#m_menu {display:block;width:20px;height:20px;position:fixed;top:3rem;right:3rem; cursor: pointer; z-index:9999;}
+#m_menu>div {height:1px;width:20px;background:#ffffff;position:absolute;left:0;}
+#m_menu>div:nth-child(1) {top:0; transition:0.5s;}
+#m_menu>div:nth-child(2) {top:10px; transition:0.5s;} 
+#m_menu>div:nth-child(3) {top:10px; transition:0.5s;}
+#m_menu>div:nth-child(4) {top:20px; transition:0.5s;}
+
+#m_menu.on>div:nth-child(1) {top:0;width:0; transition:0.5s;}
+#m_menu.on>div:nth-child(2) {top:10px;transform:rotate(45deg); transition:0.5s;}
+#m_menu.on>div:nth-child(3) {top:10px;transform:rotate(-45deg); transition:0.5s;}
+#m_menu.on>div:nth-child(4) {top:20px;width:0; transition:0.5s;}
+
+/* #header .cover_btn {position:fixed;cursor:pointer;z-index:999;}
+#header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)} */
+
+
+
+#header nav li {}
+#header nav li a {position:relative;display:block;width:3rem;height:1rem; padding:12px 0; text-indent:-99999px;}
+#header nav li a:after {content:"";display:block; position:absolute;top:50%;right:0;padding:5px;border-radius:50%; background:#bebebe;transition:0.3s;}
+#header nav li.on a:after {transform:scale(1.2); }
+#header nav li:nth-child(1).on a:after {background:#d0ef42} 
+#header nav li:nth-child(2).on a:after {background:#FFCE32}
+#header nav li:nth-child(3).on a:after {background:#000000}
+#header nav li:nth-child(4).on a:after {background:#0075bc}
+#header nav li:nth-child(5).on a:after {background:#3d927c}
+#header nav li:nth-child(6).on a:after {background:#fa5601}
+
+
+*{outline: 1px so lid #f00}
+.intro {}
+.intro .container {position:relative;height:100vh; overflow:hidden;}
+.intro .pf_pic {}
+.intro .pf_pic figure {transform:rotate(-45deg); box-shadow: 0px 0px 16px 5px #949494a8; border-radius:10px; border:4px solid#fff; overflow:hidden;}
+
+
+.intro .pf_pic .moc01 {position:absolute; top:40%; left:-30%; opacity:0;}
+.intro .pf_pic .moc02 {position:absolute; top:120%; left:-70%; opacity:0;}
+.intro .pf_pic .moc03 {position:absolute; top:120%; left:-70%; opacity:0;}
+.intro .pf_pic .moc04 {position:absolute; top:-100%; left:130%; opacity:0;}
+.intro .pf_pic .moc05 {position:absolute; top:-100%; left:130%; opacity:0;}
+
+.intro.on .pf_pic .moc01 {position:absolute; top:-6%; left:-8%; opacity:1; transition:0.5s;}
+.intro.on .pf_pic .moc02 {position:absolute; top:0%; left:20%; opacity:1; transition:0.5s 0.2s;}
+.intro.on .pf_pic .moc03 {position:absolute; top:47%; left:-3%; opacity:1; transition:0.5s 0.4s;}
+.intro.on .pf_pic .moc04 {position:absolute; top:32%; left:36%; opacity:1; transition:0.5s 0.6s;}
+.intro.on .pf_pic .moc05 {position:absolute; top:-15%; left:59%; opacity:1; transition:0.5s 0.8s;}
+
+
+.intro .txt {position:absolute; top:140%; right:-30%; transform:rotate(-45deg); font-family: 'Montserrat', sans-serif; color:#575656;}
+.intro.on .txt {position:absolute; top:40%; right:10%; opacity:1; transition:0.5s 1s;}
+.intro .txt h2 {font-size:100px; font-weight:900; font-style:italic; margin-bottom:-30px;}
+.intro .txt span {font-size:150px; letter-spacing:-0.08em; font-weight:700; font-style:italic; } 
+.intro .txt strong {display:inline-block; font-size:50px; line-height:35px; letter-spacing:-0.08em; text-align:right; font-weight:300; margin-left:30px;}
+
+
+
+
+
+
+
+.intro .left .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--dc);font-size:0;border-radius:0.7rem;opacity:0.5;}
+.intro .left .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--dc);border-radius:0.1rem;animation:wheel 0.5s infinite}
+
+@keyframes wheel {
+    to {top:0.6rem}
+}
+
+/*pf01*/
+/* .portfolio_01 .web_m {transform: translate3d(0px, 0px, 0px);} */
+.portfolio_01 {}
+.portfolio_01 .container {display:flex; height:100vh; overflow:hidden;}
+.portfolio_01 .mockup {position:relative; flex:1; width:70%}
+.portfolio_01 .mockup figure {transform:rotate(-45deg); box-shadow: 0px 0px 16px 5px #949494a8; border-radius:10px; border:4px solid#fff; overflow:hidden;}
+.portfolio_01 .mockup figure img {}
+.portfolio_01 .mockup .moc01 {position:absolute; top:50%; left:-55%;  opacity:0;}
+.portfolio_01 .mockup .moc02 {position:absolute; top:100%; left:-39%;  opacity:0;}
+.portfolio_01 .mockup .moc03 {position:absolute; top:-15%; left:39%;  opacity:0;}
+.portfolio_01 .mockup .moc04 {position:absolute; top:-45%; left:43%; transform:rotate(45deg); opacity:0;}
+.portfolio_01 .mockup .moc05 {position:absolute; top:110%; left:10%; transform:rotate(45deg);  opacity:0;}
+.portfolio_01 .mockup .moc06 {position:absolute; top:110%; left:62%; transform:rotate(45deg); opacity:0; }
+
+.portfolio_01.on .mockup .moc01 {position:absolute; top:-5%; left:-12%; opacity:1; transition:0.5s;}
+.portfolio_01.on .mockup .moc02 {position:absolute; top:56.5%; left:-9%; opacity:1; transition:0.5s 0.2s;}
+.portfolio_01.on .mockup .moc03 {position:absolute; top:8%; left:25%; opacity:1; transition:0.5s 0.4s; }
+.portfolio_01.on .mockup .moc04 {position:absolute; top:-19%; left:63%; transform:rotate(45deg); opacity:1; transition:0.5s 0.6s; }
+.portfolio_01.on .mockup .moc05 {position:absolute; top:26%; left:62.5%; transform:rotate(45deg); opacity:1; transition:0.5s 0.8s;}
+.portfolio_01.on .mockup .moc06 {position:absolute; top:71%; left:36%; transform:rotate(45deg); opacity:1; transition:0.5s 1s;}
+
+
+
+.portfolio_01 .description {justify-content:right; width:30%; display:flex;align-items:center; }
+.portfolio_01 .title {width:75%; text-align:right; margin-right:auto}
+.portfolio_01 .pf_title figure img {width:50%; margin-bottom:10px;}
+.portfolio_01 .pf_title span {font-size:15px; font-weight:300; letter-spacing:-0.025em; color:#5f5f5f; }
+.portfolio_01 .pf_title p {padding-top:25px;line-height:20px; font-size:15px; letter-spacing:-0.025em; font-weight:300; }
+
+/* .portfolio_01 .pf_title::after {content:""; display:block; height:20px; width:2px; margin-left:auto; } */
+
+.portfolio_01 .pf_type {margin-top:60px;}
+.portfolio_01 .pf_type h3 {font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_01 .pf_type span {font-size:16px; font-weight:100; letter-spacing:-0.025em; }
+
+.portfolio_01 .pf_font {margin-top:30px;}
+.portfolio_01 .pf_font h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_01 .pf_font span{font-size:16px; font-weight:100; letter-spacing:-0.025em;}
+
+.portfolio_01 .pf_info {margin-top:30px;}
+.portfolio_01 .pf_info h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_01 .pf_info span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:22px;}
+
+.portfolio_01 .pf_color {margin-top:30px;}
+.portfolio_01 .pf_color h3 {font-size:19px; font-weight:500; margin-bottom:10px; letter-spacing:-0.05em;}
+.portfolio_01 .color {display:flex; justify-content:right;}
+.portfolio_01 .color>div {margin-left:35px; box-shadow:11px 11px 0px -1px#c29c1e}
+.portfolio_01 .color .c02 {box-shadow:11px 11px 0px -1px#0f6323}
+.portfolio_01 .color p {padding:40px; background: #FFCE32; border:1px solid#000; border-bottom:none; }
+.portfolio_01 .color .c02 p {background: #009223; }
+.portfolio_01 .color span {display:block; padding:7px 0; text-align:center; border:1px solid#000; }
+
+
+
+
+
+/*pf_02*/
+.portfolio_02 {}
+.portfolio_02 .container {display:flex; height:100vh; overflow:hidden; }
+.portfolio_02 .mockup {position:relative; flex:1; width:70%}
+.portfolio_02 .mockup figure {transform:rotate(45deg); box-shadow: 0px 0px 16px 5px #9494944f; border-radius:10px; border:4px solid#fff; overflow:hidden;}
+.portfolio_02 .mockup figure img {}
+.portfolio_02 .mockup .moc01 {position:absolute; top:50%; right:-55%;  opacity:0;}
+.portfolio_02 .mockup .moc02 {position:absolute; top:100%; right:-39%;  opacity:0;}
+.portfolio_02 .mockup .moc03 {position:absolute; top:-15%; right:39%;  opacity:0;}
+.portfolio_02 .mockup .moc04 {position:absolute; top:-47%; right:43%; transform:rotate(-45deg); opacity:0;}
+.portfolio_02 .mockup .moc05 {position:absolute; top:110%; right:10%; transform:rotate(-45deg);  opacity:0;}
+.portfolio_02 .mockup .moc06 {position:absolute; top:110%; right:62%; transform:rotate(-45deg); opacity:0;}
+
+.portfolio_02.on .mockup .moc01 {position:absolute; top:-5%; right:-12%; opacity:1; transition:0.5s;}
+.portfolio_02.on .mockup .moc02 {position:absolute; top:57%; right:-12%; opacity:1; transition:0.5s 0.2s;}
+.portfolio_02.on .mockup .moc03 {position:absolute; top:11%; right:20.5%; opacity:1; transition:0.5s 0.4s; }
+.portfolio_02.on .mockup .moc04 {position:absolute; top:-14%; right:57%; transform:rotate(-45deg); opacity:1; transition:0.5s 0.6s; }
+.portfolio_02.on .mockup .moc05 {position:absolute; top:30%; right:56.5%; transform:rotate(-45deg); opacity:1; transition:0.5s 0.8s;}
+.portfolio_02.on .mockup .moc06 {position:absolute; top:73%; right:31%; transform:rotate(-45deg); opacity:1; transition:0.5s 1s;}
+
+
+
+.portfolio_02 .description {justify-content:left; width:30%; display:flex;align-items:center; }
+.portfolio_02 .title {width:75%; text-align:left; margin-left:auto}
+.portfolio_02 .pf_title figure img {width:50%; margin-bottom:10px;}
+.portfolio_02 .pf_title span {font-size:15px; font-weight:300; letter-spacing:-0.025em; color:#5f5f5f; }
+.portfolio_02 .pf_title p {padding-top:25px;line-height:20px; font-size:15px; letter-spacing:-0.025em; font-weight:300; }
+
+.portfolio_02 .pf_type {margin-top:60px;}
+.portfolio_02 .pf_type h3 {font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_02 .pf_type span {font-size:16px; font-weight:100; letter-spacing:-0.025em; }
+
+.portfolio_02 .pf_font {margin-top:30px;}
+.portfolio_02 .pf_font h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_02 .pf_font span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:23px;}
+
+.portfolio_02 .pf_info {margin-top:30px;}
+.portfolio_02 .pf_info h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_02 .pf_info span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:22px;}
+
+.portfolio_02 .pf_color {margin-top:25px; }
+.portfolio_02 .pf_color h3 {font-size:19px; font-weight:500; margin-bottom:10px; letter-spacing:-0.05em;}
+.portfolio_02 .pf_color .color {display:flex; justify-content:left;}
+.portfolio_02 .pf_color .color p {padding:3px 60px; font-size:15px; font-weight:300;}
+.portfolio_02 .pf_color .color p:nth-child(1) {background:#000; color:#bebebe;}
+.portfolio_02 .pf_color .color p:nth-child(2) {background:#bebebe; color:#000;}
+
+
+
+/* .section .container .itm figure {text-align: center; background:url(../img/subway.jpg);}
+.section .container .itm figure img {display:block; margin:0 auto; padding:150px 0; width:70%} */
+
+
+
+
+/*pf_03*/
+.portfolio_03 {}
+.portfolio_03 .container {display:flex; height:100vh; overflow:hidden;}
+.portfolio_03 .mockup {position:relative; flex:1; width:70%}
+.portfolio_03 .mockup figure {transform:rotate(-45deg); box-shadow: 0px 0px 16px 5px #9494944f; border-radius:10px; border:4px solid#fff; overflow:hidden;}
+.portfolio_03 .mockup figure img {}
+.portfolio_03 .mockup .moc01 {position:absolute; top:50%; left:-55%;  opacity:0;}
+.portfolio_03 .mockup .moc02 {position:absolute; top:100%; left:-39%;  opacity:0;}
+.portfolio_03 .mockup .moc03 {position:absolute; top:-15%; left:39%;  opacity:0;}
+.portfolio_03 .mockup .moc04 {position:absolute; top:-45%; left:43%; transform:rotate(45deg); opacity:0;}
+.portfolio_03 .mockup .moc05 {position:absolute; top:110%; left:10%; transform:rotate(45deg);  opacity:0;}
+.portfolio_03 .mockup .moc06 {position:absolute; top:110%; left:62%; transform:rotate(45deg); opacity:0; }
+
+.portfolio_03.on .mockup .moc01 {position:absolute; top:-5%; left:-12%; opacity:1; transition:0.5s;}
+.portfolio_03.on .mockup .moc02 {position:absolute; top:56.5%; left:-9%; opacity:1; transition:0.5s 0.2s;}
+.portfolio_03.on .mockup .moc03 {position:absolute; top:8%; left:25%; opacity:1; transition:0.5s 0.4s; }
+.portfolio_03.on .mockup .moc04 {position:absolute; top:-19%; left:63%; transform:rotate(45deg); opacity:1; transition:0.5s 0.6s; }
+.portfolio_03.on .mockup .moc05 {position:absolute; top:26%; left:62.5%; transform:rotate(45deg); opacity:1; transition:0.5s 0.8s;}
+.portfolio_03.on .mockup .moc06 {position:absolute; top:71%; left:36%; transform:rotate(45deg); opacity:1; transition:0.5s 1s;}
+
+
+
+.portfolio_03 .description {justify-content:right; width:30%; display:flex;align-items:center; }
+.portfolio_03 .title {width:75%; text-align:right; margin-right:auto}
+.portfolio_03 .pf_title figure img {width:50%; margin-bottom:10px;}
+.portfolio_03 .pf_title span {font-size:15px; font-weight:300; letter-spacing:-0.025em; color:#5f5f5f; }
+.portfolio_03 .pf_title p {padding-top:25px;line-height:20px; font-size:15px; letter-spacing:-0.025em; font-weight:300; }
+
+.portfolio_03 .pf_type {margin-top:60px;}
+.portfolio_03 .pf_type h3 {font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_03 .pf_type span {font-size:16px; font-weight:100; letter-spacing:-0.025em; }
+
+.portfolio_03 .pf_font {margin-top:30px;}
+.portfolio_03 .pf_font h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_03 .pf_font span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:23px;}
+
+.portfolio_03 .pf_info {margin-top:30px;}
+.portfolio_03 .pf_info h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_03 .pf_info span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:22px;}
+
+.portfolio_03 .pf_color {margin-top:30px;}
+.portfolio_03 .pf_color h3 {font-size:19px; font-weight:500; margin-bottom:15px; letter-spacing:-0.05em;}
+.portfolio_03 .color {}
+.portfolio_03 .color>div {padding-bottom:7px; align-items:center;}
+.portfolio_03 .color>div span {display:inline-block;padding-right:20px;vertical-align:middle;}
+.portfolio_03 .color>div p {display:inline-block; padding:12px; background:#5e92c4; border-radius:50%; vertical-align:middle;}
+.portfolio_03 .color .c02 p {background:#0075bc;}
+.portfolio_03 .color .c03 p {background:#ff0000;}
+.portfolio_03 .color span {font-size:15px; font-weight:300; }
+
+
+
+/*pf_04*/
+.portfolio_04 {}
+.portfolio_04 .container {display:flex; height:100vh; overflow:hidden;}
+.portfolio_04 .mockup {position:relative; flex:1; width:70%}
+.portfolio_04 .mockup figure {transform:rotate(45deg); box-shadow: 0px 0px 16px 5px #9494944f; border-radius:10px; border:4px solid#fff; overflow:hidden;}
+.portfolio_04 .mockup figure img {}
+
+.portfolio_04 .mockup .moc01 {position:absolute; top:50%; right:-55%; opacity:0;}
+.portfolio_04 .mockup .moc02 {position:absolute; top:100%; right:-39%; opacity:0;}
+.portfolio_04 .mockup .moc03 {position:absolute; top:-15%; right:39%; opacity:0;}
+.portfolio_04 .mockup .moc04 {position:absolute; top:-67%; right:23%; transform:rotate(-45deg); opacity:0;}
+.portfolio_04 .mockup .moc05 {position:absolute; top:172%; right:153%; transform:rotate(-45deg);  opacity:0;}
+.portfolio_04 .mockup .moc06 {position:absolute; top:120%; right:-10%; opacity:0;}
+
+.portfolio_04.on .mockup .moc01 {position:absolute; top:-5%; right:-12%; opacity:1; transition:0.5s;}
+.portfolio_04.on .mockup .moc02 {position:absolute; top:57%; right:-12%; opacity:1; transition:0.5s 0.2s;}
+.portfolio_04.on .mockup .moc03 {position:absolute; top:11%; right:20.5%; opacity:1; transition:0.5s 0.4s; }
+.portfolio_04.on .mockup .moc04 {position:absolute; top:-14%; right:57%; transform:rotate(-45deg); opacity:1; transition:0.5s 0.6s; }
+.portfolio_04.on .mockup .moc05 {position:absolute; top:42%; right:53%; transform:rotate(-45deg); opacity:1; transition:0.5s 0.8s;}
+.portfolio_04.on .mockup .moc06 {position:absolute; top:74%; right:20%; opacity:1; transition:0.5s 1s;}
+/* .portfolio_04.on .mockup .moc06 {position:absolute; top:74%; right:30%; transform:rotate(-45deg); opacity:1; transition:0.5s 1s;} */
+
+
+.portfolio_04 .description {justify-content:left; width:30%; display:flex;align-items:center; }
+.portfolio_04 .title {width:75%; text-align:left; margin-left:auto}
+.portfolio_04 .pf_title figure img {width:50%; margin-bottom:10px;}
+.portfolio_04 .pf_title span {font-size:15px; font-weight:300; letter-spacing:-0.025em; color:#5f5f5f; }
+.portfolio_04 .pf_title p {padding-top:25px;line-height:20px; font-size:15px; letter-spacing:-0.025em; font-weight:300; }
+
+.portfolio_04 .pf_type {margin-top:60px;}
+.portfolio_04 .pf_type h3 {font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_04 .pf_type span {font-size:16px; font-weight:100; letter-spacing:-0.025em; }
+
+.portfolio_04 .pf_font {margin-top:30px;}
+.portfolio_04 .pf_font h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_04 .pf_font span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:23px;}
+
+.portfolio_04 .pf_info {margin-top:30px;}
+.portfolio_04 .pf_info h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_04 .pf_info span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:22px;}
+
+.portfolio_04 .pf_color {margin-top:30px;}
+.portfolio_04 .pf_color h3 {font-size:19px; font-weight:500; margin-bottom:10px; letter-spacing:-0.05em;}
+.portfolio_04 .color {display:flex; justify-content:left;}
+.portfolio_04 .color>div {margin-right:35px; box-shadow:11px 11px 0px -1px#28574a}
+.portfolio_04 .color .c02 {box-shadow:11px 11px 0px -1px#56b6af}
+.portfolio_04 .color p {padding:40px; background: #183a31; border:1px solid#000; border-bottom:none; }
+.portfolio_04 .color .c02 p {background: #44918c; }
+.portfolio_04 .color span {display:block; padding:7px 0; text-align:center; border:1px solid#000; }
+
+
+
+/*pf_05*/
+.portfolio_05 {}
+.portfolio_05 .container {display:flex; height:100vh; overflow:hidden;}
+.portfolio_05 .mockup {position:relative; flex:1; width:70%}
+.portfolio_05 .mockup figure {transform:rotate(-45deg); box-shadow: 0px 0px 16px 5px #9494944f; border-radius:10px; border:4px solid#fff; overflow:hidden;}
+.portfolio_05 .mockup figure img {}
+ 
+.portfolio_05 .mockup .moc01 {position:absolute; top:50%; left:-55%; opacity:0;}
+.portfolio_05 .mockup .moc02 {position:absolute; top:100%; left:-39%; opacity:0;}
+.portfolio_05 .mockup .moc03 {position:absolute; top:-15%; left:39%; opacity:0;}
+.portfolio_05 .mockup .moc04 {position:absolute; top:-67%; left:23%; transform:rotate(45deg); opacity:0;}
+.portfolio_05 .mockup .moc05 {position:absolute; top:172%; left:153%; transform:rotate(45deg);  opacity:0;}
+.portfolio_05 .mockup .moc06 {position:absolute; top:120%; left:-10%; opacity:0;}
+
+.portfolio_05.on .mockup .moc01 {position:absolute; top:-5%; left:-12%; opacity:1; transition:0.5s;}
+.portfolio_05.on .mockup .moc02 {position:absolute; top:57%; left:-12%; opacity:1; transition:0.5s 0.2s;}
+.portfolio_05.on .mockup .moc03 {position:absolute; top:11%; left:20.5%; opacity:1; transition:0.5s 0.4s; }
+.portfolio_05.on .mockup .moc04 {position:absolute; top:-14%; left:57%; transform:rotate(45deg); opacity:1; transition:0.5s 0.6s; }
+.portfolio_05.on .mockup .moc05 {position:absolute; top:42%; left:53%; transform:rotate(45deg); opacity:1; transition:0.5s 0.8s;}
+.portfolio_05.on .mockup .moc06 {position:absolute; top:74%; left:20%; opacity:1; transition:0.5s 1s;}
+
+
+.portfolio_05 .description {justify-content:right; width:30%; display:flex;align-items:center; }
+.portfolio_05 .title {width:75%; text-align:right; margin-right:auto}
+.portfolio_05 .pf_title figure img {width:50%; margin-bottom:10px;}
+.portfolio_05 .pf_title span {font-size:15px; font-weight:300; letter-spacing:-0.025em; color:#5f5f5f; }
+.portfolio_05 .pf_title p {padding-top:25px;line-height:20px; font-size:15px; letter-spacing:-0.025em; font-weight:300; }
+
+.portfolio_05 .pf_type {margin-top:60px;}
+.portfolio_05 .pf_type h3 {font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_05 .pf_type span {font-size:16px; font-weight:100; letter-spacing:-0.025em; }
+
+.portfolio_05 .pf_font {margin-top:30px;}
+.portfolio_05 .pf_font h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_05 .pf_font span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:23px;}
+
+.portfolio_05 .pf_info {margin-top:30px;}
+.portfolio_05 .pf_info h3{font-size:19px; font-weight:500; margin-bottom:6px; letter-spacing:-0.05em;}
+.portfolio_05 .pf_info span{font-size:16px; font-weight:100; letter-spacing:-0.025em; line-height:22px;}
+
+.portfolio_05 .pf_color {margin-top:25px; }
+.portfolio_05 .pf_color h3 {font-size:19px; font-weight:500; margin-bottom:10px; letter-spacing:-0.05em;}
+.portfolio_05 .pf_color .color {display:flex; justify-content:right;}
+.portfolio_05 .pf_color .color p {padding:3px 70px; font-size:15px; font-weight:300;background:#fa5601; color:#fff;}
+
+
+
+/*큰메뉴*/
+#cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.75);width:100%;height:100vh;z-index:998;}
+#cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:1rem;font-weight:300;line-height:1.5;text-align:center;background:#fff;padding:5rem;border-radius:50%;}
