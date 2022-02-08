@@ -25,6 +25,14 @@ $(function(){
          ]            
     });
 
+    //-------------
+    $('#section01 i.xi-angle-left-thin').on('click', function(){
+        $('.sp').slick('slickPrev');
+    });
+    $('#section01 i.xi-angle-right-thin').on('click', function(){
+        $('.sp').slick('slickNext'); 
+    });
+
     $('.insta').slick({
         arrows:false,
         vertical:true,        
