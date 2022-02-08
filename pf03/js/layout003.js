@@ -52,29 +52,6 @@ $(function(){
       }
    });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //-------------메인 동영상--------
     $("#m01").YTPlayer({
         videoURL:'https://youtu.be/dzb6oIAuinY', 
