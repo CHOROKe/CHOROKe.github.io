@@ -1,23 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Luckiest+Guy&family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 #header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
 
 #m_menu {display:block;width:20px;height:20px;position:fixed;top:3rem;right:3rem; cursor: pointer; z-index:9999;}
-#m_menu>div {height:1px;width:20px;background:#ffffff;position:absolute;left:0;}
+#m_menu>div {height:1px;width:20px;background:#000000;position:absolute;left:0;} 
+#m_menu.on>div {background:#fff;}
 #m_menu>div:nth-child(1) {top:0; transition:0.5s;}
 #m_menu>div:nth-child(2) {top:10px; transition:0.5s;} 
 #m_menu>div:nth-child(3) {top:10px; transition:0.5s;}
@@ -27,9 +16,6 @@
 #m_menu.on>div:nth-child(2) {top:10px;transform:rotate(45deg); transition:0.5s;}
 #m_menu.on>div:nth-child(3) {top:10px;transform:rotate(-45deg); transition:0.5s;}
 #m_menu.on>div:nth-child(4) {top:20px;width:0; transition:0.5s;}
-
-/* #header .cover_btn {position:fixed;cursor:pointer;z-index:999;}
-#header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)} */
 
 
 
@@ -43,9 +29,10 @@
 #header nav li:nth-child(4).on a:after {background:#0075bc}
 #header nav li:nth-child(5).on a:after {background:#3d927c}
 #header nav li:nth-child(6).on a:after {background:#fa5601}
+#header nav li:nth-child(7).on a:after {background:#ffbefa}
 
 
-*{outline: 1px so lid #f00}
+
 .intro {}
 .intro .container {position:relative;height:100vh; overflow:hidden;}
 .intro .pf_pic {}
@@ -68,17 +55,14 @@
 .intro .txt {position:absolute; top:140%; right:-30%; transform:rotate(-45deg); font-family: 'Montserrat', sans-serif; color:#575656;}
 .intro.on .txt {position:absolute; top:40%; right:10%; opacity:1; transition:0.5s 1s;}
 .intro .txt h2 {font-size:100px; font-weight:900; font-style:italic; margin-bottom:-30px;}
-.intro .txt span {font-size:150px; letter-spacing:-0.08em; font-weight:700; font-style:italic; } 
-.intro .txt strong {display:inline-block; font-size:50px; line-height:35px; letter-spacing:-0.08em; text-align:right; font-weight:300; margin-left:30px;}
+.intro .txt span {font-size:150px; letter-spacing:-0.025em; font-weight:700; font-style:italic; } 
+.intro .txt strong {display:inline-block; font-size:50px; line-height:35px; letter-spacing:-0.08em; text-align:right; font-weight:200; margin-left:0px;}
 
 
 
 
-
-
-
-.intro .left .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--dc);font-size:0;border-radius:0.7rem;opacity:0.5;}
-.intro .left .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--dc);border-radius:0.1rem;animation:wheel 0.5s infinite}
+.intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid #000;font-size:0;border-radius:0.7rem;opacity:0.5;}
+.intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:#000;border-radius:0.1rem;animation:wheel 0.5s infinite}
 
 @keyframes wheel {
     to {top:0.6rem}
@@ -135,10 +119,15 @@
 .portfolio_01 .color p {padding:40px; background: #FFCE32; border:1px solid#000; border-bottom:none; }
 .portfolio_01 .color .c02 p {background: #009223; }
 .portfolio_01 .color span {display:block; padding:7px 0; text-align:center; border:1px solid#000; }
-
-
-
-
+*{outline: 1px sol id #f00}
+.section .button {font-family: 'Montserrat', sans-serif; font-weight:500; margin-top:60px; font-size:19px;}
+.section .button a {padding:10px 17px; border-radius:50px; color:#000000;
+box-shadow:-2px -2px 8px rgb(250, 250, 250) , -2px -2px 12px rgba(250, 250, 250, 0.5), 
+inset 2px 2px 4px rgba(250, 250, 250, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.5); }
+.section .button a:hover {color: #000000;
+    box-shadow:inset -2px -2px 8px rgb(250, 250, 250) ,inset -2px -2px 12px rgba(250, 250, 250, 0.5), 
+    inset 2px 2px 4px rgba(250, 250, 250, 0.1),inset 2px 2px 8px rgba(0, 0, 0, 0.5); 
+}
 
 /*pf_02*/
 .portfolio_02 {}
@@ -186,13 +175,6 @@
 .portfolio_02 .pf_color .color p {padding:3px 60px; font-size:15px; font-weight:300;}
 .portfolio_02 .pf_color .color p:nth-child(1) {background:#000; color:#bebebe;}
 .portfolio_02 .pf_color .color p:nth-child(2) {background:#bebebe; color:#000;}
-
-
-
-/* .section .container .itm figure {text-align: center; background:url(../img/subway.jpg);}
-.section .container .itm figure img {display:block; margin:0 auto; padding:150px 0; width:70%} */
-
-
 
 
 /*pf_03*/
@@ -267,8 +249,6 @@
 .portfolio_04.on .mockup .moc04 {position:absolute; top:-14%; right:57%; transform:rotate(-45deg); opacity:1; transition:0.5s 0.6s; }
 .portfolio_04.on .mockup .moc05 {position:absolute; top:42%; right:53%; transform:rotate(-45deg); opacity:1; transition:0.5s 0.8s;}
 .portfolio_04.on .mockup .moc06 {position:absolute; top:74%; right:20%; opacity:1; transition:0.5s 1s;}
-/* .portfolio_04.on .mockup .moc06 {position:absolute; top:74%; right:30%; transform:rotate(-45deg); opacity:1; transition:0.5s 1s;} */
-
 
 .portfolio_04 .description {justify-content:left; width:30%; display:flex;align-items:center; }
 .portfolio_04 .title {width:75%; text-align:left; margin-left:auto}
@@ -345,7 +325,57 @@
 .portfolio_05 .pf_color .color p {padding:3px 70px; font-size:15px; font-weight:300;background:#fa5601; color:#fff;}
 
 
+/*profile*/
+.profile {}
+.profile .container {display:flex; height:100vh}
+.profile .left {position: relative; width:33%;}
+.profile .left figure {position:absolute; top:50%; right:0; transform:translateY(-50%);}
+.profile .left figure img {}
+
+
+.profile .right {width:45%; height:auto; margin:auto; display:grid;grid-template-columns: 1fr 1fr; font-family: 'Montserrat', sans-serif;}
+.profile .right>* {margin:20px; padding:30px; border-radius:17px; 
+box-shadow:-2px -2px 8px rgb(250, 250, 250) , -2px -2px 12px rgba(250, 250, 250, 0.5), 
+inset 2px 2px 4px rgba(250, 250, 250, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);}
+
+.profile .right>*:hover {box-shadow:inset -2px -2px 8px rgb(250, 250, 250) , inset -2px -2px 12px rgba(250, 250, 250, 0.5), 
+inset 2px 2px 4px rgba(250, 250, 250, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);}
+.profile .intro {}
+.profile .intro span {display:block; font-size:19px; font-weight:700; }
+.profile .intro li~li {font-size:16px; line-height:21px; font-weight:400; margin-bottom:7px;}
+.profile .intro li:first-child {font-size:27px; margin-bottom:30px; font-weight:300; letter-spacing:-0.03em;}
+
+.profile .edu {}
+.profile .edu span {display:block; letter-spacing:0em; font-weight:400; font-size:15px; margin-bottom:15px;}
+.profile .edu li~li {line-height:21px; letter-spacing:-0.025em; font-weight:600; font-size:17px;}
+.profile .edu li:first-child {font-size:27px; margin-bottom:30px; font-weight:300; letter-spacing:-0.03em;}
+
+.profile .spec {}
+.profile .spec h2 {font-size:27px; margin-bottom:30px; font-weight:300; letter-spacing:-0.03em;}
+.profile .spec span {display:block;margin:7px 0 25px 0; font-size:15px; font-weight:400;}
+.profile .spec ul {display:grid;  grid-template-columns:100px 110px 100px; text-align:center; }
+.profile .spec i {padding:10px; background:#000; border-radius:50%; color:#fff; margin-right:7px; font-size:30px;}
+
+.profile .cer {}
+.profile .cer span {display:block;letter-spacing:0em; font-weight:400; font-size:15px; margin-bottom:15px;}
+.profile .cer li~li {line-height:21px; letter-spacing:-0.025em; font-weight:600; font-size:17px;}
+.profile .cer li:first-child {font-size:27px; margin-bottom:30px; font-weight:300; letter-spacing:-0.03em;}
 
 /*큰메뉴*/
-#cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.75);width:100%;height:100vh;z-index:998;}
-#cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:1rem;font-weight:300;line-height:1.5;text-align:center;background:#fff;padding:5rem;border-radius:50%;}
+#cover {display:none;position:fixed;top:0;left:0;background:#000000da;width:100%;height:100vh;z-index:998;}
+#cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%); color:#fff; text-align:center; 
+font-family:'EB Garamond', serif;width:100% }
+#cover ul li {margin:80px 35px; font-size:40px; font-weight:300; line-height:1.5; } 
+#cover ul li span {display:block;font-family: 'Montserrat', sans-serif; font-style:normal; font-size:19px; letter-spacing:0.025em;}
+#cover ul li:nth-child(1) {}
+#cover ul li:nth-child(2) {font-style: italic;display:inline-flex} 
+#cover ul li:nth-child(3) {font-style: italic;display:inline-flex} 
+#cover ul li:nth-child(4) {font-style: italic;display:inline-flex} 
+#cover ul li:nth-child(5) {font-style: italic;display:inline-flex} 
+#cover ul li:nth-child(6) {font-style: italic; margin-bottom:20px;display:inline-flex} 
+
+
+
+
+
+
