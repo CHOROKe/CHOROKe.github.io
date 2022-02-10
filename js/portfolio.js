@@ -9,8 +9,8 @@ $(function(){
             let idx=destination.index;
             sc.eq(idx).addClass('on').siblings().removeClass('on');
             sideBar.eq(idx).addClass('on').siblings().removeClass('on');
-            idx==2 ? $('#m_menu').addClass('color') : $('#m_menu').removeClass('color')
-            idx==4 ? $('#m_menu').addClass('color') : $('#m_menu').removeClass('color')
+            idx==2 || idx==4 ? $('#m_menu').addClass('color') : $('#m_menu').removeClass('color')
+
         }, 
     }); 
     
