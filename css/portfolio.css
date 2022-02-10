@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 *{outline: 1px soli d #f00}
-#Wrap {min-width:1920px;}
+#Wrap {min-width:1920px;} 
 #header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
 
 #m_menu {display:block;width:20px;height:20px;position:fixed;top:3rem;right:3rem; cursor: pointer; z-index:9999;}
@@ -55,26 +55,35 @@
 
 
 
-.intro .pf_pic>figure>a {position:absolute; top:75%; left:50%; transform:translateX(-50%); padding:10px; background:#000; border-radius:5px; z-index:999;}
+.intro .pf_pic>figure>a {position:absolute; top:75%; left:50%; transform:translateX(-50%); padding:10px; background:#FFCE32; border-radius:5px; z-index:999;}
 .intro .pf_pic>figure>a span {color:#fff; font-family: 'Montserrat', sans-serif; font-weight:700;}
-.intro .pf_pic>figure>a span::before {content:""; display:block; position:absolute; top:80%; left:45%; padding:7px; background:#000; transform:rotate(-45deg);}
+.intro .pf_pic>figure>a span::before {content:""; display:block; position:absolute; top:80%; left:45%; padding:7px; background:#FFCE32; transform:rotate(-45deg);}
 .intro .pf_pic>figure .btn {position:absolute; bottom:-3.5%; left:50%; transform:translateX(-50%); width:15px;height:15px; }
 .intro .pf_pic>figure .btn a {position: relative;display:block;width:100%;height:100%;background:#FFCE32; border-radius:50%; z-index:999;}
 .intro .pf_pic>figure:hover .btn span {position:absolute; top:0%; left:0%;width:100%;height:100%;background:#ffcf328a; border-radius:50%; animation:more 0.8s infinite; z-index:9;}
 
 
-.intro .pf_pic>.moc02>a {background:#bebebe;}
+.intro .pf_pic>.moc02>a {background:#fff;}
 .intro .pf_pic>.moc02>a span {color:#000;}
-.intro .pf_pic>.moc02>a span::before {background:#bebebe;}
+.intro .pf_pic>.moc02>a span::before {background:#fff;}
 .intro .pf_pic>.moc02 .btn a {background:#000000;}
 .intro .pf_pic>.moc02:hover .btn span {background:#00000057;}
 
+.intro .pf_pic>.moc03>a {background:#5E92C4;}
+.intro .pf_pic>.moc03>a span {color:#fff;}
+.intro .pf_pic>.moc03>a span::before {background:#5E92C4;}
 .intro .pf_pic>.moc03 .btn a {background:#5E92C4;}
 .intro .pf_pic>.moc03:hover .btn span {background:#5e93c485;}
 
+.intro .pf_pic>.moc04>a {background:#183A31;}
+.intro .pf_pic>.moc04>a span {color:#fff;}
+.intro .pf_pic>.moc04>a span::before {background:#183A31;}
 .intro .pf_pic>.moc04 .btn a {background:#183A31;}
 .intro .pf_pic>.moc04:hover .btn span {background:#183a3179;}
 
+.intro .pf_pic>.moc05>a {background:#fa5601;}
+.intro .pf_pic>.moc05>a span {color:#fff;}
+.intro .pf_pic>.moc05>a span::before {background:#fa5601;}
 .intro .pf_pic>.moc05 .btn a {background:#fa5601;}
 .intro .pf_pic>.moc05:hover .btn span {background:#fa540183;}
 
