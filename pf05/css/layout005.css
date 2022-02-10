@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 #wrap {} 
 #header {display:none; position:fixed; top:0; left:0; width:100%; background:#0000008f; z-index:9999;}
 #header .container {width:1200px; padding:0 15px; margin:0 auto; display:flex; line-height:100px; justify-content:space-between;}
@@ -28,23 +27,17 @@
 #m_menu.on>div:nth-child(3) {top:10px;transform:rotate(-45deg);}
 #m_menu.on>div:nth-child(4) {top:20px;width:0;}
 
+#main_visual {position: relative; height:100vh;  }
 
-
-#main_visual {height:100vh; position: relative; }
-#main_visual .bbtn {text-align:center;padding-top:800px;}
-#main_visual .bbtn i {margin:0 5px; padding:10px; border-radius:5px; background:#b1b1b1; font-size:20px; color:#000 }
-
-
-
-/* #main_visual {position: relative;} */
-.wheel {display:inline-block;position:absolute; top:85%; left:50%; transform:translate(-50%, -50%); text-align:center; animation:bounce 3s infinite; }
+.wheel {display:inline-block;position:absolute; bottom:5%; left:50%; transform:translateX(-50%); text-align:center;}
+.wheel .case { animation:bounce 3s infinite; }
 .wheel a {font-size:14px; font-weight:100; color:#ffffff62;}
 .wheel span {display:block; color:#bebebe; letter-spacing:0.05em; font-size:16px; font-weight:100; font-style: italic; 
 text-shadow: -1px 0 #bebebe7c, 0 1px #bebebe7c, 1px 0 #bebebe7c, 0 -1px #bebebe7c;
 margin-top:5px;} 
 
 
-
+/* section01 */
 #section01 {padding:150px 0; background:#000; color:#353535;  }
 #section01 h2 {text-align:center; font-size:23px; font-style:italic; font-family:'Playfair Display', serif; 
 font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
@@ -55,8 +48,7 @@ font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
 #section01 .container .slider figure {padding:25px 30px; border-right:1px solid#0000008f;}
 #section01 .container .slider figure img {height:600px;}
 #section01 .container .slider .sm {width:100%; margin:auto 0;padding:0 45px}
-#section01 .container .slider .sm h3 {font-family: 'Playfair Display', serif;  font-weight:400; font-size:18px; font-style: italic;
-letter-spacing:0.025em;}
+#section01 .container .slider .sm h3 {font-family: 'Playfair Display', serif;  font-weight:400; font-size:18px; font-style: italic;letter-spacing:0.025em;}
 #section01 .container .slider .sm p {line-height:14px; font-size:12px; font-weight:300; letter-spacing:-0.025em; padding:20px 0 40px 0;}
 #section01 .container .slider .sp img {height:300px; margin:0 auto;}
 #section01 .container .s02 .sp img {padding-right:100px}
@@ -67,13 +59,10 @@ letter-spacing:0.025em;}
 #section01 .container .slider .pri span {font-size:12px; font-weight:300; letter-spacing:0.05em;}
 
 #section01 .container .pick img {height:650px; display:inline-block;}
-
 .slick-vertical .slick-slide {border: none;} 
 
 
-
-/*화살표를 제목밑에
-백그라운드 그라데이션으로 하는거*/
+/* section02 */
 #section02 {padding:150px 0; background:#000; color:#bebebe;}
 #section02 .container {}
 #section02 .container h2 {text-align:center; font-size:23px; font-style:italic; font-family:'Playfair Display', serif; 
@@ -89,8 +78,7 @@ font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
 #section02 .sell figure img {display: inline-block; width:40%}
 
 #section02 .sell figure .border {padding:0 90px; margin-top:20px; }
-#section02 .sell figure .border h3 {border-top:1px solid#bebebe67; border-bottom:1px solid#bebebe67; padding:10px 0; font-size:14px; font-weight:100;
-font-style:italic; color: #bebebe; letter-spacing:0.05em;}
+#section02 .sell figure .border h3 {border-top:1px solid#bebebe67; border-bottom:1px solid#bebebe67; padding:10px 0; font-size:14px; font-weight:100; font-style:italic; color: #bebebe; letter-spacing:0.05em;}
 
 #section02 .sell figure .ssm a {display:inline-block; padding:6px 20px; background:#bebebe;margin-top:20px; }
 #section02 .sell figure .ssm a span {color:#000; font-weight:100; font-size:14px; letter-spacing:0.025em;}
@@ -98,7 +86,7 @@ font-style:italic; color: #bebebe; letter-spacing:0.05em;}
 #section02 .icon02 {display:none;}
 
 
-
+/* section03 */
 #section03 {padding:150px 0 ; background:#000; color:#bebebe; border-top:0.3px solid#bebebe38; border-bottom:0.3px solid#bebebe38;}
 #section03 h2 {display:none; margin-bottom:40px; text-align:center; font-family:'Playfair Display', serif; font-size:25px; font-style: italic; font-weight:400; color:rgb(219, 219, 219); letter-spacing:0.2em;}
 #section03 h2>span {font-size:23px; font-style:italic;  font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; }
@@ -119,46 +107,7 @@ text-shadow: -1px 0 #bebebe7c, 0 1px #bebebe7c, 1px 0 #bebebe7c, 0 -1px #bebebe7
 #section03 .s02 strong {margin-top:-160px;}
 
 
-/* 섹션03 패딩 보텀 150으로 바꾸기, con 마진탑 100 지우기, .shadow display:none 해버리기
-#section03 {position: relative; padding:150px 0 230px 0; background:#000; color:#bebebe; border-top:0.3px solid#bebebe38; border-bottom:0.3px solid#bebebe38;}
-#section03 h2 {margin-bottom:40px; text-align:center; font-family:'Playfair Display', serif; font-size:25px; font-style: italic; font-weight:400; color:rgb(219, 219, 219); letter-spacing:0.2em;}
-#section03 h2>span {font-size:23px; font-style:italic;  font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; }
-
-#section03 .container { display:flex; width:1200px; margin:0 auto; padding:0 15px;}
-#section03 .container .con { position: relative; margin-left:30px; z-index:999; margin-top:190px }
-#section03 .container .con:nth-child(1) {margin-left:0;}
-#section03 .container .con img {width:100%}
-#section03 .container .con .step {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80%; text-align:center; }
-#section03 .container .con .step h3 {font-family:'Playfair Display', serif; font-size:25px; font-weight:700; 
-letter-spacing:0.2em; margin-bottom:30px;}
-#section03 .container .con .step p {font-size:14px; font-weight:100; line-height:18px; letter-spacing:-0.025em;}
-
-#section03 .shadow {width:1200px; margin:0 auto; padding:0 15px; position:absolute; top:102px; left:0 }
-#section03 .shadow strong {display:block; font-weight:900; font-size:400px; color:#000; font-style:italic;
-text-shadow: -1px 0 #bebebe7c, 0 1px #bebebe7c, 1px 0 #bebebe7c, 0 -1px #bebebe7c;}
-#section03 .shadow strong:last-child {margin-top:100px} */
-
-
-
-/* 섹션03 패딩 보텀 150으로 바꾸기, con 마진탑 100 지우기, .shadow display:none 해버리기
-#section03 {position: relative; padding:150px 0 230px 0; background:#000; color:#bebebe; border-top:0.3px solid#bebebe38; border-bottom:0.3px solid#bebebe38;}
-#section03 h2 {margin-bottom:40px; text-align:center; font-family:'Playfair Display', serif; font-size:25px; font-style: italic; font-weight:400; color:rgb(219, 219, 219); letter-spacing:0.2em;}
-#section03 h2>span {font-size:23px; font-style:italic;  font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; }
-
-#section03 .container { display:flex; width:1200px; margin:0 auto; padding:0 15px;}
-#section03 .container .con { position: relative; margin-left:30px; z-index:999; margin-top:80px }
-#section03 .container .con:nth-child(1) {margin-left:0;}
-#section03 .container .con img {width:100%}
-#section03 .container .con .step {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80%; text-align:center; }
-#section03 .container .con .step h3 {font-family:'Playfair Display', serif; font-size:25px; font-weight:700; 
-letter-spacing:0.2em; margin-bottom:30px;}
-#section03 .container .con .step p {font-size:14px; font-weight:100; line-height:18px; letter-spacing:-0.025em;}
-#section03 .shadow {width:1200px; margin:0 auto; padding:0 15px; position:absolute; top:102px; left:25% }
-#section03 .shadow strong {display:block; font-weight:900; font-size:200px; color:#000; font-style:italic;
-text-shadow: -1px 0 #bebebe7c, 0 1px #bebebe7c, 1px 0 #bebebe7c, 0 -1px #bebebe7c;}
-#section03 .shadow strong:last-child {margin-top:310px} */
-
-
+/* section04 */
 #section04 {margin:0 auto; text-align:center; padding:150px 0; color:#bebebe; background:#000;}
 #section04 h2 {font-size:300px; font-weight:900; letter-spacing:-0.025em; }
 #section04 .title {display:flex; width:100%; justify-content:center; margin-top:-80px;}
@@ -177,7 +126,7 @@ text-shadow: -1px 0 #bebebe7c, 0 1px #bebebe7c, 1px 0 #bebebe7c, 0 -1px #bebebe7
 
 
 
-
+/* footer */
 #footer {background:#000000;padding:100px 0;}
 #footer .footer {width:1200px; margin:0 auto; text-align:center; overflow:hidden;}
 
@@ -233,11 +182,20 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     
     #main_visual {height:100vh; position: relative; }
     #main_visual .bbtn {display:none;}
+       
+    
+
+    .wheel {display:inline-block;position:absolute; bottom:5%; left:50%; transform:translateX(-50%); text-align:center;}
+    .wheel .case { animation:bounce 3s infinite; }
+    .wheel a {font-size:14px; font-weight:100; color:#ffffff62;}
+    .wheel span {display:block; color:#bebebe; letter-spacing:0.05em; font-size:16px; font-weight:100; font-style: italic; 
+    text-shadow: -1px 0 #bebebe7c, 0 1px #bebebe7c, 1px 0 #bebebe7c, 0 -1px #bebebe7c; margin-top:5px;} 
     
     
+
+
     #section01 {padding:75px 0; background:#000; color:#353535; }
-    #section01 h2 {text-align:center; font-size:23px; font-style:italic; font-family:'Playfair Display', serif; 
-    font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
+    #section01 h2 {text-align:center; font-size:23px; font-style:italic; font-family:'Playfair Display', serif; font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
     #section01 h2>span {font-size:25px; font-style: italic; font-weight:400; color:#dbdbdb; letter-spacing:0.2em;}
     #section01 .container {display:block; width:auto; margin:0 auto; padding:0 15px}
     #section01 .container>div {flex:none; width:auto;}
@@ -247,11 +205,10 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     #section01 .container .slider figure {padding:25px 30px; border-right:1px solid#0000008f;}
     #section01 .container .slider figure img {height:350px;}
     #section01 .container .slider .sm {width:auto; margin:auto 0;padding: 30px 0px; }
-    #section01 .container .slider .sm h3 {font-family: 'Playfair Display', serif;  font-weight:400; font-size:18px; font-style: italic;
-    letter-spacing:0.025em;}
+    #section01 .container .slider .sm h3 {font-family: 'Playfair Display', serif;  font-weight:400; font-size:18px; font-style: italic; letter-spacing:0.025em;}
     #section01 .container .slider .sm p {line-height:14px; font-size:12px; font-weight:300; letter-spacing:-0.025em; padding: 20px 9px 40px 9px;}
 
-    /* #section01 .container .slider .sp {height:170px;} */
+
     #section01 .container .slider .sp img {height:170px; margin:0 auto;}
     #section01 .container .s02 .sp img {padding-right:20%}
     
@@ -269,17 +226,14 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     
     
     
-    /*화살표를 제목밑에
-    백그라운드 그라데이션으로 하는거*/
+
     #section02 {padding:75px 0; background:#000; color:#bebebe;}
     #section02 .container {position: relative;} 
     #section02 .container h2 {text-align:center; font-size:23px; font-style:italic; font-family:'Playfair Display', serif; 
     font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
     #section02 .container h2>span {font-size:25px; font-style: italic; font-weight:400; color:#dbdbdb; letter-spacing:0.2em;}
     
-    /* #section02 .container .icon {text-align:center;}
-    #section02 .container .icon i {color:#bebebe; font-size:25px; padding:0 20px;}
-    #section02 .container .icon i:first-child {transform: rotate(90deg);} */
+
     
     #section02 .sell {}
     #section02 .sell figure {text-align:center; }
@@ -348,7 +302,7 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
 
 
     #footer {background:#000000;padding:75px 0;}
-    #footer .footer {width:100%;margin:0 auto;padding:0 7px}
+    #footer .footer {width:100%;margin:0 auto;padding:0 7px} 
 
     #footer .footer .menu {font-size:0;}
     #footer .footer .menu li {position:relative;display:inline-block;text-align: center;width:50%;padding:3px;}
@@ -368,4 +322,4 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
 
 
  
-*{outline: 1px so lid #f00}
+*{outline: 1px sol id #f00}
