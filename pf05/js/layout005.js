@@ -55,6 +55,7 @@ $(function(){
         arrows:false,
         fade:true,                
         autoplay:true,
+        autoplaySpeed:4000,
         asNavFor: '.pick',
         
     });
@@ -62,6 +63,7 @@ $(function(){
         arrows:false,
         vertical:true,
         autoplay:true,
+        autoplaySpeed:4000,
         asNavFor: '.paper',
     });
     
@@ -70,12 +72,14 @@ $(function(){
         slidesToShow: 5,
         arrows:false,
         autoplay:true,
+        autoplaySpeed:2000,
         responsive: [
             {
               breakpoint: 769,
               settings: {
                 slidesToShow: 1, 
-                autoplay:false,              
+                autoplay:false,  
+                autoplaySpeed:2000,            
               }
             },
     
@@ -95,8 +99,6 @@ $(function(){
         showControls:false,
         playOnlyIfVisible:true,
         useOnMobile:true,
-
-        // optimizeDisplay:false,
 
     });
 
