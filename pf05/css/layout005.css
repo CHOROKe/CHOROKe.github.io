@@ -151,6 +151,7 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
 
 @media (max-width:768px) {
     #wrap {} 
+    /* header */
     #header {display:block; position:fixed; top:0; left:0; width:100%; background:#00000055; z-index:9999;}
     #header .container {position:fixed; top:0; right:0;  width:calc(100% - 100px); height:100vh; padding:100px 60px; 
     margin:0; display:inline-block; line-height:20px;  justify-content:space-between; background:#000000ad; right:-100%}
@@ -193,7 +194,7 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     
     
 
-
+    /* section01 */
     #section01 {padding:75px 0; background:#000; color:#353535; }
     #section01 h2 {text-align:center; font-size:23px; font-style:italic; font-family:'Playfair Display', serif; font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
     #section01 h2>span {font-size:25px; font-style: italic; font-weight:400; color:#dbdbdb; letter-spacing:0.2em;}
@@ -226,32 +227,28 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     
     
     
-
+    /* section02 */
     #section02 {padding:75px 0; background:#000; color:#bebebe;}
     #section02 .container {position: relative;} 
     #section02 .container h2 {text-align:center; font-size:23px; font-style:italic; font-family:'Playfair Display', serif; 
     font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-bottom:40px;}
-    #section02 .container h2>span {font-size:25px; font-style: italic; font-weight:400; color:#dbdbdb; letter-spacing:0.2em;}
-    
-
+    #section02 .container h2>span {font-size:25px; font-style: italic; font-weight:400; color:#dbdbdb; letter-spacing:0.2em;}   
     
     #section02 .sell {}
     #section02 .sell figure {text-align:center; }
     #section02 .sell figure img {display: inline-block; width:40%}
     
     #section02 .sell figure .border {padding:0 100px; margin-top:20px; }
-    #section02 .sell figure .border h3 {border-top:none; border-bottom:none; padding:10px 0; font-size:14px; font-weight:100;
-    font-style:italic; color: #bebebe; letter-spacing:0.05em;}
+    #section02 .sell figure .border h3 {border-top:none; border-bottom:none; padding:10px 0; font-size:14px; font-weight:100;font-style:italic; color: #bebebe; letter-spacing:0.05em;}
     
     #section02 .sell figure .ssm a {display:inline-block; padding:6px 20px; background:#bebebe;margin-top:10px; }
-    #section02 .sell figure .ssm a span {color:#000; font-weight:100; font-size:14px; letter-spacing:0.025em;}
-    
+    #section02 .sell figure .ssm a span {color:#000; font-weight:100; font-size:14px; letter-spacing:0.025em;}    
     
     #section02 .icon02 {display:block; cursor:pointer;}
     #section02  i {color:#3b3b3b; position:absolute; top:50%; left:20px; font-size:60px;}
     #section02  i:last-child {left:auto; right:20px;}
     
-    
+    /* section03 */
     #section03 {padding:75px 0 ; background:#000; color:#bebebe; border-top:none; border-bottom:none;}
     #section03 h2 {display:block; margin-bottom:40px; text-align:center; font-family:'Playfair Display', serif; font-size:25px; font-style: italic; font-weight:400; color:#dbdbdb; letter-spacing:0.025em;}
     #section03 h2>span {font-size:23px; font-style:italic; font-weight:700;color:#7c7c7c; letter-spacing:-0.045em; margin-left:10px; }
@@ -271,18 +268,13 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     #section03 .slick-dots li.slick-active {background:#ffffff; transform:scale(1.3);}
     #section03 .slick-dots li button {display:none;}
 
-
-
-
-
-
     #section03 .shadow {display:none;}
     #section03 .shadow strong {display:block; text-align:center;font-weight:900; font-size:350px; color:#000; font-style:italic;
     text-shadow: -1px 0 #bebebe7c, 0 1px #bebebe7c, 1px 0 #bebebe7c, 0 -1px #bebebe7c;}
     #section03 .s02 strong {margin-top:-160px;}  
 
     
-    
+    /* section04 */
     #section04 {margin:0 auto; text-align:center; padding:75px 0; color:#bebebe; background:#000;}
     #section04 h2 {font-size:70px; font-weight:700; letter-spacing:-0.025em; }
     #section04 .title {display:flex; width:100%; justify-content:center; margin-top:-5%;}
@@ -300,7 +292,7 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
 
 
 
-
+    /* footer */
     #footer {background:#000000;padding:75px 0;}
     #footer .footer {width:100%;margin:0 auto;padding:0 7px} 
 
