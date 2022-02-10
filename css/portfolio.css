@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 *{outline: 1px soli d #f00}
+#Wrap {min-width:1920px;}
 #header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
 
 #m_menu {display:block;width:20px;height:20px;position:fixed;top:3rem;right:3rem; cursor: pointer; z-index:9999;}
