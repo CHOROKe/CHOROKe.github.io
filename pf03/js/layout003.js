@@ -54,13 +54,16 @@ $(function(){
 
     //-------------메인 동영상--------
     $("#m01").YTPlayer({
-        videoURL:'https://youtu.be/dzb6oIAuinY', 
+        videoURL:'dzb6oIAuinY', 
         containment:'#main_visual', 
         autoPlay:true, 
         mute:true, 
-        startAt:0, 
+        startAt:4, 
+        stopAt:27,
         opacity:1,
+        loop:true,
         showControls:false,  
+        quality:'highres',
     });
     //-------------
     $('.slider').slick({
