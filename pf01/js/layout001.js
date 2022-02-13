@@ -8,7 +8,7 @@ $(function(){
         if(sct>0) {
             $('#header').addClass('on')
         }else{
-            $('#header').removeClass('on')
+            $('#header').removeClass('on') 
         }
        
     });
@@ -16,12 +16,13 @@ $(function(){
 //-----메인비주얼 동영상----------- 
 $("#m01").YTPlayer({
     videoURL:'RXDExEpil50',
-    containment:'self',
+    containment:'#main_visual',
     autoPlay:true, 
     mute:true, 
     startAt:0, 
     opacity:1,
     showControls:false, 
+    quality:'highres',
 });
 
 
