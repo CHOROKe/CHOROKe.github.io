@@ -1,5 +1,5 @@
 $(function(){
-    //-------------헤더--------
+    //-------------헤더-------- 
     $('#header').on('click', function(){
         $('html, body').animate({scrollTop:0},600)
     });
@@ -7,7 +7,7 @@ $(function(){
     $(window).on('scroll', function(){
         var sct=$(window).scrollTop();
         if($(window).width()>768){
-            if(sct>300) {
+            if(sct>0) {
                 $('#header').fadeIn()
             }else{ 
                 $('#header').fadeOut()
@@ -22,21 +22,6 @@ $(function(){
         $('.container').toggleClass('on'); 
     });
 
-    // $('nav>ul>li>a').on('click',function(){
-    //     if($('#header nav').hasClass('on')){
-    //         $(this).next().slideToggle();
-    //         $(this).parent().siblings().find('ul').slideUp();
-    //     }
-
-    // });
-
-    // $(window).on('resize', function(){
-    //     if($(window).width() > 768) {
-    //         $('nav').removeClass('on');
-    //         $('nav>ul>li').removeAttr('style'); 
-    //     } 
-    // });
-
 
 
     //-------------메인 비쥬얼 동영상--------
@@ -45,9 +30,11 @@ $(function(){
         containment:'#main_visual', 
         autoPlay:true, 
         mute:true, 
-        startAt:0, 
+        startAt:3.5, 
         opacity:1,
-        showControls:false,   
+        loop:true,
+        showControls:false,  
+        quality:'highres', 
     });
 
     //-------------섹션01--------
