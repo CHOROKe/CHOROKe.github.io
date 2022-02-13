@@ -28,8 +28,8 @@
 #header nav>ul ul a:hover {color:#fa5601;} 
 
 /* main_visual */
-#main_visual {position:relative;height:100vh;}
-#main_visual figure {position:relative;}
+#main_visual {height:100vh;}
+
 
 /* content01 */
 #content01 {padding:200px 0 ;}
