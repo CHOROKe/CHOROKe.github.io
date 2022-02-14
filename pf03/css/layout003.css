@@ -60,7 +60,7 @@
 #section01 .customer {position: relative; text-align:center;height:276px; letter-spacing:-0.025em;}
 #section01 .customer>div {visibility: hidden; position:absolute;top:0;left:0;width:100%;}
 #section01 .customer>div.on {visibility: visible;} 
-#section01 .customer figure img {margin: 0 auto;}
+#section01 .customer figure img {margin: 0 auto; cursor:pointer;}
 
 #section01 figure h3 {font-size:20px; font-weight:500; padding-top:30px}
 #section01 figure p {font-size:14px; font-weight:300; color:#4e4e4e; padding-top:15px; line-height: 18px; letter-spacing:0.05em;}
@@ -201,7 +201,6 @@
 
 @media (max-width:768px) {
 
-    
     /* header */
     #header {position:absolute; top:0; left:0;width:100%; z-index:999; color:#333;}
     #header:hover {background:transparent; color:#000;}
@@ -220,13 +219,13 @@
     #header .container nav>ul>li>a {padding:15px}
     #header .container i {display:none; font-size:18px;} 
     
-    #header nav>ul>li {position: relative; border-bottom:1px solid#ddd;}
-    #header nav>ul ul {display:none;position:static; top:100px; left:0;width:100%;height: auto; padding-top: 10px;overflow: hidden;transition:none; z-index:888;} 
+    #header nav>ul>li {position: relative; }
+    #header nav>ul ul {display:none; position:static; top:100px; left:0;width:100%;height: auto; padding-top: 10px;overflow: hidden;transition:none; z-index:888;} 
     #header nav:hover>ul ul {height: auto; }
     #header nav:after {content:"";display: none; width:100%; height:0; background:#fff; position:absolute; top:100px; left:0; transition:0.4s;z-index: 777;} 
     #header nav:hover:after {height: 200px;} 
-    #header nav>ul a {font-weight:300; color:rgb(122, 122, 122); letter-spacing:-0.025em;}
-    #header nav>ul ul a {display:block; line-height: 30px; font-size: 14px; font-weight:300; background:#e8f9d8; color:#000;}     
+    #header nav>ul a {display:block; padding:0 10px; line-height:10px; font-weight:300; color:#5a5a5a; letter-spacing:0.07em; font-size:15px;}
+    #header nav>ul ul a {display:block; line-height:30px; font-size: 13px; font-weight:300; background:#e8f9d87a; color:#000000;}     
     #header nav ul ul a:hover:after {content:""; display:none; width:50%; height:1px; background:#009132;margin:2px auto 0 auto; color: #009132;} 
     #header nav ul a:hover  {color: #009132; }
 
@@ -254,7 +253,7 @@
 
 
     /* main_visual */
-    #main_visual {height:calc(100vh);position: relative;} 
+    #main_visual {height:calc(100vh);position: relative;}  
 
     #main_visual .quick_link_content {width:1200px; padding:0 15px; position:absolute; top:857px;left:50%;transform:translateX(-50%); display:none; justify-content:flex-end; }
     #main_visual .quick_link_content >div a {display:block;width:300px; height:80px;line-height:80px; text-align:center;}
@@ -437,6 +436,6 @@
 }
 
 
-*{outline: 1px so lid #f00} 
+
 
 
