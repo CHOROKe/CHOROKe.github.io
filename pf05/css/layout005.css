@@ -220,7 +220,6 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
 
     #section01 .container .pick img {height:650px; display:inline-block;}
     #section01 .container .pick {display:none;}
-
     #section01 .txt {height:155px;}
     .slick-vertical .slick-slide {border: none;} 
     
@@ -309,7 +308,3 @@ content:"";display:block;width:1px;height:10px;background:#868686;}
     #footer .footer .copy p {font-size:12px;font-weight:400;color:#888;}  
 
 }
-
-
- 
-*{outline: 1px sol id #f00}
