@@ -60,39 +60,35 @@
 .intro .pf_pic>figure>a span::before {content:""; display:block; position:absolute; top:80%; left:45%; padding:7px; background:#FFCE32; transform:rotate(-45deg);}
 .intro .pf_pic>figure .btn {position:absolute; bottom:-3.5%; left:50%; transform:translateX(-50%); width:15px;height:15px; }
 .intro .pf_pic>figure .btn a {position: relative;display:block;width:100%;height:100%;background:#FFCE32; border-radius:50%; z-index:999;}
-.intro .pf_pic>figure:hover .btn span {position:absolute; top:0%; left:0%;width:100%;height:100%;background:#ffcf324f; border-radius:50%; animation:more 0.8s infinite; z-index:9;}
+.intro .pf_pic>figure:hover .btn span {position:absolute; top:0%; left:0%;width:100%;height:100%;background:#ffcf327a; border-radius:50%; animation:more 0.8s infinite; z-index:9;}
 
 
 .intro .pf_pic>.moc02>a {background:#fff;}
 .intro .pf_pic>.moc02>a span {color:#000;}
 .intro .pf_pic>.moc02>a span::before {background:#fff;}
 .intro .pf_pic>.moc02 .btn a {background:#000000;}
-.intro .pf_pic>.moc02:hover .btn span {background:#00000044;}
+.intro .pf_pic>.moc02:hover .btn span {background:#0000007a;}
 
 .intro .pf_pic>.moc03>a {background:#5E92C4;}
 .intro .pf_pic>.moc03>a span {color:#fff;}
 .intro .pf_pic>.moc03>a span::before {background:#5E92C4;}
 .intro .pf_pic>.moc03 .btn a {background:#5E92C4;}
-.intro .pf_pic>.moc03:hover .btn span {background:#5e93c43d;}
+.intro .pf_pic>.moc03:hover .btn span {background:#5e93c485;}
 
 .intro .pf_pic>.moc04>a {background:#183A31;}
 .intro .pf_pic>.moc04>a span {color:#fff;}
 .intro .pf_pic>.moc04>a span::before {background:#183A31;}
 .intro .pf_pic>.moc04 .btn a {background:#183A31;}
-.intro .pf_pic>.moc04:hover .btn span {background:#183a3136;}
+.intro .pf_pic>.moc04:hover .btn span {background:#183a3181;}
 
 .intro .pf_pic>.moc05>a {background:#fa5601;}
 .intro .pf_pic>.moc05>a span {color:#fff;}
 .intro .pf_pic>.moc05>a span::before {background:#fa5601;}
 .intro .pf_pic>.moc05 .btn a {background:#fa5601;}
-.intro .pf_pic>.moc05:hover .btn span {background:#fa54012f;}
+.intro .pf_pic>.moc05:hover .btn span {background:#fa540179;}
 
 @keyframes more {
-    0% {transform:scale(0);}
-    25% {transform:scale(2.8);}
-    50% {transform:scale(2.8);}
-    75% {transform:scale(4);}
-    100% {transform:scale(0);}
+    100% {opacity: 1;transform: scale(4);opacity: 0;}
 }
 
 
@@ -435,7 +431,7 @@ font-family:'EB Garamond', serif;width:100% }
     #Wrap {min-width:auto;} 
     #header nav {position:fixed;top:50%;right:5%;transform:translateY(-50%);z-index:999;}
     
-    #m_menu {display:block;width:20px;height:20px;position:fixed;top:3%;right:5%; cursor: pointer; z-index:9999;}
+    #m_menu {display:block;width:20px;height:20px;position:fixed;top:2%;right:3%; cursor: pointer; z-index:9999;}
     #m_menu>div {height:1px;width:20px;background:#000000;position:absolute;left:0;} 
     #m_menu.on>div {background:#fff;}
     #m_menu>div:nth-child(1) {top:0; transition:0.5s;}
@@ -450,7 +446,7 @@ font-family:'EB Garamond', serif;width:100% }
     
     #m_menu.color>div {background:#000;}
     
-    #header nav li {}
+    #header nav li {display:none;}
     #header nav li a {position:relative;display:block; padding:10px 0; text-indent:-99999px;}
     #header nav li a:after {content:"";display:block; position:absolute;top:50%;right:0;padding:5px;border-radius:50%; background:#bebebe;transition:0.3s;}
     #header nav li.on a:after {transform:scale(1.2); }
@@ -526,11 +522,11 @@ font-family:'EB Garamond', serif;width:100% }
     }
     
     *{outline: 1px  so lid #f00} 
-    .intro .txt { position:static; top:50%; right:50%; transform:translate(0) rotate(0); font-family: 'Montserrat', sans-serif; color:#333333;width:80%;margin:0 auto; }
+    .intro .txt { position:static; top:50%; right:50%; transform:translate(0) rotate(0); font-family: 'Montserrat', sans-serif; color:#333333;width:75%; margin:0 auto; }
     .intro.on .txt {position:static; top:50%; right:50%; transform:translate(0) rotate(0);  opacity:1; transition:0.5s 1s; }
     .intro .txt h2 {font-size:55px; font-weight:900; font-style:italic; margin-bottom:-10px;}
     .intro .txt span {font-size:85px; letter-spacing:-0.025em; font-weight:700; font-style:italic;} 
-    .intro .txt strong {display:inline-block; font-size:27px; line-height:25px; letter-spacing:-0.08em; text-align:left; font-weight:200; margin-left:0px;}
+    .intro .txt strong {display:inline-block; font-size:27px; line-height:25px; letter-spacing:-0.08em; text-align:right; font-weight:200; margin-left:0px;}
     
     
     
